@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-color:#61dafb;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -59,6 +63,11 @@
   line-height: 20vh;
 }
 
+.header-link {
+  text-decoration: none;
+  color: #90cea1;
+}
+
 .header-logo-box {
   height: 8vh;
   padding: 6vh 0 0 0;
@@ -79,4 +88,28 @@
 
 .header-logo {
   width: 3rem;
+}
+
+.search-container {
+  height: 10vh;
+  line-height: 10vh;
+  background-color: #61dafb;
+}
+
+.search-input {
+  width: 40vw;
+  height: 4vh;
+  border: 4px solid black;
+  padding: 0 0 0 2vw;
+}
+
+.search-button {
+  height: 5vh;
+  font-family: Century;
+  font-weight: bolder;
+  background-color: #90cea1;
+}
+
+.results {
+  line-height: 1;
 }

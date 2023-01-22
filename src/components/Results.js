@@ -29,8 +29,8 @@ export const Results = ({movies}) => {
 
     const Movie = ({ title }) => {
         return (
-            <>
+            <div className='results'>
             <div>{title}</div>
-            </>
+            </div>
         )
     }

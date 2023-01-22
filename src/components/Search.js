@@ -27,19 +27,20 @@ export default function Search() {
     }
 
     return (
-        <>
+        <div className='search-container'>
         <input
+            className='search-input'
             type='text'
             name='title'
-            placeholder='Search for Movies'
+            placeholder='Search for Movies by Title'
             value={title}
             onChange={handleChange}
             />
-        <button onClick={handleSubmit}>Click 4 Flicks!</button>
+        <button className='search-button' onClick={handleSubmit}>Click 4 Flicks!</button>
         {ready ?
         <Results movies={movies}/>
         : ''}
-        </>
+        </div>
     );
 }
 
