@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import tmdbLogo from '../assets/tmdb.svg'
+import React, { Component } from 'react';
+import tmdbLogo from '../assets/tmdb.svg';
 
 
 export default class Header extends Component {

@@ -1,7 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
-import axios from 'axios';
 
-export const Results = ({movies, total, pages}) => {
+export const Results = ({movies, total}) => {
 
     if(movies.length > 0){
     return (
