@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const Results = ({movies, total}) => {
+export const Results = ({movies, total, pages}) => {
 
     if(movies.length > 0){
     return (
@@ -42,3 +42,4 @@ export const Results = ({movies, total}) => {
             </div>
         )
     }
+
