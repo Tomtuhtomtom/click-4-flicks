@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 export default function Search() {
-    const myAPIKey = 'e9d5cddd9429f125b2cd26271121c66a';
+    const myAPIKey = process.env.REACT_APP_API_KEY
     const [title, setTitle] = useState('');
     const searchURL = `https://api.themoviedb.org/3/search/movie?api_key=${myAPIKey}&query=${title}`;
     const [movies, setMovies] = useState({});
