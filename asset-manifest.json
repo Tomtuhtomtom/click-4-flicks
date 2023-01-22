@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/click-4-flicks/static/css/main.9b3d9200.css",
-    "main.js": "/click-4-flicks/static/js/main.08a66156.js",
+    "main.css": "/click-4-flicks/static/css/main.2ea99776.css",
+    "main.js": "/click-4-flicks/static/js/main.fdff12be.js",
     "static/js/787.1f8b306d.chunk.js": "/click-4-flicks/static/js/787.1f8b306d.chunk.js",
     "static/media/filmstrip.jpg": "/click-4-flicks/static/media/filmstrip.9124143df4e7ebaf9eda.jpg",
     "static/media/tmdb.svg": "/click-4-flicks/static/media/tmdb.de1a664e8d0777ca4ddb2a5a298bcfb6.svg",
     "index.html": "/click-4-flicks/index.html",
-    "main.9b3d9200.css.map": "/click-4-flicks/static/css/main.9b3d9200.css.map",
-    "main.08a66156.js.map": "/click-4-flicks/static/js/main.08a66156.js.map",
+    "main.2ea99776.css.map": "/click-4-flicks/static/css/main.2ea99776.css.map",
+    "main.fdff12be.js.map": "/click-4-flicks/static/js/main.fdff12be.js.map",
     "787.1f8b306d.chunk.js.map": "/click-4-flicks/static/js/787.1f8b306d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b3d9200.css",
-    "static/js/main.08a66156.js"
+    "static/css/main.2ea99776.css",
+    "static/js/main.fdff12be.js"
   ]
 }
