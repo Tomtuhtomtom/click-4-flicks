@@ -28,7 +28,6 @@ export default function Search() {
 
     return (
         <>
-        <div>Search</div>
         <input
             type='text'
             name='title'
@@ -36,7 +35,7 @@ export default function Search() {
             value={title}
             onChange={handleChange}
             />
-        <button onClick={handleSubmit}>Search</button>
+        <button onClick={handleSubmit}>Click 4 Flicks!</button>
         {ready ?
         <Results movies={movies}/>
         : ''}
