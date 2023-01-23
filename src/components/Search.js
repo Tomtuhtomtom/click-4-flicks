@@ -14,20 +14,26 @@ export default function Search() {
     const [updated, setUpdated] = useState(title);
     const [ready, setReady] = useState(false);
 
-    const handleSubmitWithPages = () => {
+    const handleSubmit = () => {
         setReady(true);
         setUpdated(title);
         let allMovies = [];
         axios.get(`${searchURL}`)
             .then(res => {
                 setTotal(res.data.total_results);
-                for (let i = 0; i < Number(res.data.total_pages); i++){
+                allMovies = res.data.results;
+                if(Number(res.data.total_pages) > 1) {
+                for (let i = 1; i < Number(res.data.total_pages); i++){
                     axios.get(`${searchURLWithPages + (i + 1)}`)
                         .then(res => {
                             allMovies = allMovies.concat(res.data.results);
                             setMovies(allMovies);
                             })
                         };
+                }
+                else{
+                    setMovies(allMovies);
+                }
             });
     }
 
@@ -37,7 +43,7 @@ export default function Search() {
 
     const handleKeyDown = event => {
         if (event.keyCode === 13) {
-            handleSubmitWithPages();
+            handleSubmit();
         }
     }
 
@@ -52,7 +58,7 @@ export default function Search() {
                     onChange={handleChange}
                     onKeyDown={handleKeyDown}
                     />
-                <button className='search-button' onClick={handleSubmitWithPages}>Click 4 Flicks!</button>
+                <button className='search-button' onClick={handleSubmit}>Click 4 Flicks!</button>
             {ready ?
             <Results movies={movies} total={total} />
             : ''}
