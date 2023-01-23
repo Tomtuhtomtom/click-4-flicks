@@ -61,7 +61,7 @@ export default function Search() {
                 <button className='search-button' onClick={handleSubmit}>Click 4 Flicks!</button>
             {ready ?
             <Results movies={movies} total={total} />
-            : ''}
+            : <div className='welcome-message'>Get Clicking!</div>}
         </div>
     );
 }

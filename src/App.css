@@ -161,7 +161,7 @@ body {
   font-weight: bold;
 }
 
-.no-results, .results-found {
+.no-results, .results-found, .welcome-message {
   font-size: 2rem;
   font-family: Century;
   font-weight: bolder;
