@@ -13,11 +13,19 @@ export default function Search() {
     const [total, setTotal] = useState('');
     const [updated, setUpdated] = useState(title);
     const [ready, setReady] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const maxPerPage = 100;
+    const [moviesPerPage, setMoviesPerPage] = useState(maxPerPage);
+    
+
+    const indexOfLast = currentPage * moviesPerPage;
+    const indexOfFirst = indexOfLast - moviesPerPage;
 
     const handleSubmit = () => {
         setReady(true);
         setUpdated(title);
         let allMovies = [];
+        let currentMovies = [];
         axios.get(`${searchURL}`)
             .then(res => {
                 setTotal(res.data.total_results);
@@ -26,8 +34,9 @@ export default function Search() {
                 for (let i = 1; i < Number(res.data.total_pages); i++){
                     axios.get(`${searchURLWithPages + (i + 1)}`)
                         .then(res => {
-                            allMovies = allMovies.concat(res.data.results);
-                            setMovies(allMovies);
+                            allMovies = allMovies.concat(res.data.results)
+                            currentMovies = allMovies.slice(indexOfFirst, indexOfLast);
+                            setMovies(currentMovies);
                             })
                         };
                 }
@@ -60,7 +69,7 @@ export default function Search() {
                     />
                 <button className='search-button' onClick={handleSubmit}>Click 4 Flicks!</button>
             {ready ?
-            <Results movies={movies} total={total} />
+            <Results movies={movies} total={total} maxPerPage={maxPerPage}/>
             : <div className='welcome-message'>Get Clicking!</div>}
         </div>
     );
