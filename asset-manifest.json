@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/click-4-flicks/static/css/main.41281117.css",
-    "main.js": "/click-4-flicks/static/js/main.412e593b.js",
+    "main.css": "/click-4-flicks/static/css/main.a8e5675d.css",
+    "main.js": "/click-4-flicks/static/js/main.c2e87430.js",
     "static/js/787.1f8b306d.chunk.js": "/click-4-flicks/static/js/787.1f8b306d.chunk.js",
     "static/media/filmstrip.jpg": "/click-4-flicks/static/media/filmstrip.9124143df4e7ebaf9eda.jpg",
     "static/media/tmdb.svg": "/click-4-flicks/static/media/tmdb.de1a664e8d0777ca4ddb2a5a298bcfb6.svg",
     "index.html": "/click-4-flicks/index.html",
-    "main.41281117.css.map": "/click-4-flicks/static/css/main.41281117.css.map",
-    "main.412e593b.js.map": "/click-4-flicks/static/js/main.412e593b.js.map",
+    "main.a8e5675d.css.map": "/click-4-flicks/static/css/main.a8e5675d.css.map",
+    "main.c2e87430.js.map": "/click-4-flicks/static/js/main.c2e87430.js.map",
     "787.1f8b306d.chunk.js.map": "/click-4-flicks/static/js/787.1f8b306d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41281117.css",
-    "static/js/main.412e593b.js"
+    "static/css/main.a8e5675d.css",
+    "static/js/main.c2e87430.js"
   ]
 }
